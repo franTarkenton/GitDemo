@@ -1,4 +1,2 @@
-# Intended as some learning materials to support learning GIT.
 
-- demo of adding to a file  
-- antoher samve
+Misc files used to support demo of Git delivered to GeoBC (6-11-2018)
