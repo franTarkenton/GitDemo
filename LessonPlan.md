@@ -99,9 +99,9 @@ Now same thing in eclipse:
    - Link the local repo with the remote
      `git remote add origin <path to remote>`
    - origin:
-      - origin is the shortname that you can use to refer to this repo
+      - origin is the short name that you can use to refer to this repo
       - you can name it anything you want.
-      - By default git convensions suggest your upstream repo should be
+      - By default git conventions suggest your upstream repo should be
         named origin, where upstream means the version that you are '
         contributing to / building.
       - There may be other remotes that you want to pull from, but not 
@@ -112,16 +112,17 @@ Now same thing in eclipse:
       `git push origin master`
       
 - push: the git operation we are performing
-- origin: the shortname of the remote we are pushing to, could also spell out 
+- origin: the short name of the remote we are pushing to, could also spell out 
           the remote name
 - master: the name of the local branch we are pushing. (more on branches to come)
 
-Demo of remote:
-1. create repository.
-2. added some code
-3. staged that code and committed.
-4. create remote 
-5. push the code to the remote
+Steps that May take place that illustrate the benefit of a remote:
+1. you create a new git create repository.
+2. add some code to the new repo
+3. add files to the git repo (stage/commit)
+4. create remote a repository.
+5. push the code to the remote.
+6. Share the remote url with team.
 6. ian clones the remote on his local machine
 7. ian makes changes, commits, and pushes (save changes to the remote)
 8. I make changes
@@ -131,30 +132,29 @@ Demo of remote:
 12. you are forced to look at the changes that Ian made and make a decision around
     what change is the correct one, and label the conflict as resolved.
     
-- 
+* Also note, this scenario is simplified, ideally the "autoritative copy" of the 
+repo would have been forked by Ian!
+
+* Forking is part of next part.
 
 ### Contributing to a Remote:
+These steps review what was covered in the session:
 
-- Login to github
-- To demo forking will look at [Will Burts burn severity scripts](https://github.com/bcgov/burn-severity)
-  - fork as demo.
-  
-- Will delete fork franTarkenton/Data-BC-PyLib, and recreate!
-
-1. Fork the github repo: https://github.com/bcgov/dbc-pylib
-2. Clone the remote fork:
+1. Login to github
+1. Go to https://github.com/bcgov/dbc-pylib, and fork the repo.
+1. Clone the forked version of the repo you just created:
    `git clone <path to repo>`
-3. The clone will remember the relationship to the repo from which it was created:
-   `git remote -v`
-4. Now import the project using eclipse
-5. Make some changes to the project, and commit.
-6. Push the changes to the fork, 
-7. View the changes in the fork
-8. View that the changes are not in the original version that we forked FROM
+1. The clone will remember the relationship to the repo from which it was created
+   example: `git remote -v`
+1. Now import the project using eclipse (or whatever system you want to use)
+1. Make some changes to the project, and commit.
+1. Push the changes to the fork,
+1. View the changes in the fork, on github.
+1. View that the changes are not in the original version that we forked FROM
     - Also view the github visual on the status of the fork.
-9. Issue a pull request
-10. Merge the pull request.
-11. view that they are the same.
+1. Issue a pull request
+1. Merge the pull request.
+1. view that they are the same.
 
 
 [Another demo on what we covered here in forking](https://guides.github.com/activities/forking/)
@@ -163,37 +163,4 @@ Demo of remote:
 Best practice is: fork, then pull request!
 - Do demo using DataBCPyLib
 - https://github.com/bcgov/dbc-pylib
-
-
-
- 
-   
-
-
-
-
-
-
-
-
-
-
-
- - Remote First
-    - Create github account
-    - press the buttons
- 
-   
-
-
-Some basic Git Concepts
-Repository
-Commit
-Staging
-Remote vs Local repo
-Fetch / Push / Pull
-Working with Local Repository
-Working with Remote Repositories
-Best practices (fork / pull requests)
-Thinking will do a demo showing how to do most of these things in Eclipse as well as from the commandline.
 
